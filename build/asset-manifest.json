@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/webstudio-version-2/static/css/main.25aba1dd.css",
-    "main.js": "/webstudio-version-2/static/js/main.e38f6c8e.js",
+    "main.css": "/webstudio-version-2/static/css/main.cf9847d4.css",
+    "main.js": "/webstudio-version-2/static/js/main.9d9ba157.js",
     "static/media/hero-bg-desk-2x.jpg": "/webstudio-version-2/static/media/hero-bg-desk-2x.a94c8b1fd9c2ca8328a2.jpg",
     "static/media/hero-bg-tab-2x.jpg": "/webstudio-version-2/static/media/hero-bg-tab-2x.60913ab49f5b1fdf4d25.jpg",
     "static/media/Img-bg.jpg": "/webstudio-version-2/static/media/Img-bg.893dc04f909adfec6bd2.jpg",
@@ -21,11 +21,11 @@
     "static/media/Logo4.svg": "/webstudio-version-2/static/media/Logo4.7224c3b64671da1811b72a0e80b03628.svg",
     "index.html": "/webstudio-version-2/index.html",
     "static/media/Vector.svg": "/webstudio-version-2/static/media/Vector.97e07e093f8e12dc18db.svg",
-    "main.25aba1dd.css.map": "/webstudio-version-2/static/css/main.25aba1dd.css.map",
-    "main.e38f6c8e.js.map": "/webstudio-version-2/static/js/main.e38f6c8e.js.map"
+    "main.cf9847d4.css.map": "/webstudio-version-2/static/css/main.cf9847d4.css.map",
+    "main.9d9ba157.js.map": "/webstudio-version-2/static/js/main.9d9ba157.js.map"
   },
   "entrypoints": [
-    "static/css/main.25aba1dd.css",
-    "static/js/main.e38f6c8e.js"
+    "static/css/main.cf9847d4.css",
+    "static/js/main.9d9ba157.js"
   ]
 }
