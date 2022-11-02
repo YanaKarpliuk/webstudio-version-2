@@ -93,7 +93,6 @@
 }
 
 .modal-title {
-  font-family: 'Roboto';
   font-style: normal;
   @include font (700, 20px, 30px, 0.03em);
   text-align: center;
@@ -110,7 +109,6 @@
 
 .modal-label {
   display: block;
-  font-family: 'Roboto';
   font-style: normal;
   @include font (400, 12px, 14px, 0.01em);
   color: #757575;
@@ -146,7 +144,6 @@
   transition-property: border-color;
   @include transitioned;
   &::placeholder {
-    font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
@@ -190,7 +187,6 @@
 }
 
 .modal-policy-text {
-  font-family: 'Roboto';
   font-style: normal;
   @include font (400, 12px, 14px, 0.03em);
   color: #757575;
@@ -217,7 +213,6 @@
 }
 
 .modal-policy-link {
-  font-family: 'Roboto';
   font-style: normal;
   @include font (400, 12px, 14px, 0.03em);
   color: var(--blue-color);

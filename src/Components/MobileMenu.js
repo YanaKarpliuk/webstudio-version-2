@@ -8,7 +8,7 @@ export default function MobileMenu(props) {
         <div>
           <GrClose className="menu-close-button" onClick={props.closeMenu} />
           <ul className="mob-menu__list">
-            <li className="mob-menu__item">
+            <li className="mob-menu__item" onClick={props.closeMenu}>
               <NavLink
                 to="/"
                 end
@@ -21,7 +21,7 @@ export default function MobileMenu(props) {
                 Studio
               </NavLink>
             </li>
-            <li className="mob-menu__item">
+            <li className="mob-menu__item" onClick={props.closeMenu}>
               <NavLink
                 to="/portfolio"
                 className={navData =>
@@ -33,7 +33,7 @@ export default function MobileMenu(props) {
                 Portfolio
               </NavLink>
             </li>
-            <li className="mob-menu__item">
+            <li className="mob-menu__item" onClick={props.closeMenu}>
               <NavLink
                 to="contacts"
                 className={navData =>

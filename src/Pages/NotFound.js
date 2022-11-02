@@ -1,5 +1,7 @@
 export default function NotFound() {
-  <section className="container">
-    The page you are looking for is not found =(
-  </section>;
+  return (
+    <section className="container not-found-section">
+      The page you are looking for is not found =(
+    </section>
+  );
 }

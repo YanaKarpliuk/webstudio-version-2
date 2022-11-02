@@ -53,11 +53,6 @@
   }
 }
 
-// .hidden {
-//   opacity: 0;
-//   pointer-events: none;
-// }
-
 .no-scroll {
   overflow: hidden;
   @media screen and (min-width: 768px) {
@@ -68,7 +63,6 @@
 .menu-close-button {
   position: absolute;
   right: 0;
-  // padding-right: 25px;
   color: var(--black-color);
   cursor: pointer;
   transition-property: fill;

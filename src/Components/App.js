@@ -15,7 +15,7 @@ export default function App() {
         <Route path="portfolio" element={<Portfolio />} />
         <Route path="portfolio/:portfolioId" element={<PortfolioDetails />} />
         <Route path="contacts" element={<Contacts />} />
-        <Route path='*' element={<NotFound />} />
+        <Route path="*" element={<NotFound />} />
       </Route>
     </Routes>
   );
