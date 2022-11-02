@@ -1,11 +1,12 @@
 import React from 'react';
+import { lazy } from 'react';
 import { Routes, Route } from 'react-router-dom';
-import Home from 'Pages/Home';
-import Portfolio from 'Pages/Portfolio';
-import Contacts from 'Pages/Contacts';
-import NotFound from 'Pages/NotFound';
 import SharedLayout from './SharedLayout';
-import PortfolioDetails from 'Pages/PortfolioDetails';
+const Home = lazy(() => import('Pages/Home'));
+const Portfolio = lazy(() => import('Pages/Portfolio'));
+const Contacts = lazy(() => import('Pages/Contacts'));
+const NotFound = lazy(() => import('Pages/NotFound'));
+const PortfolioDetails = lazy(() => import('Pages/PortfolioDetails'));
 
 export default function App() {
   return (

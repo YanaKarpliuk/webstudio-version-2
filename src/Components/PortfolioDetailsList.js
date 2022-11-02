@@ -7,7 +7,7 @@ export default function PortfolioDetailsList(props) {
         <h3 className="portfolioDetails-add-list-title">
           Other works from this category
         </h3>
-        <ul className="portfolio-img-list">{props.sameTypeList.map(item => <PortfolioItem key={item.id} {...item} />)}</ul>
+        <ul className="portfolio-img-list">{props.sameTypeList.map(item => <PortfolioItem key={item.id} {...item} />)}</ul> 
       </div>
     </section>
   );
