@@ -1,7 +1,12 @@
 {
   "files": {
     "main.css": "/webstudio-version-2/static/css/main.b5625ce4.css",
-    "main.js": "/webstudio-version-2/static/js/main.5196673c.js",
+    "main.js": "/webstudio-version-2/static/js/main.fe1fb0e8.js",
+    "static/js/775.8bbb36fc.chunk.js": "/webstudio-version-2/static/js/775.8bbb36fc.chunk.js",
+    "static/js/540.1ca3b03c.chunk.js": "/webstudio-version-2/static/js/540.1ca3b03c.chunk.js",
+    "static/js/608.511e95a6.chunk.js": "/webstudio-version-2/static/js/608.511e95a6.chunk.js",
+    "static/js/926.e50df988.chunk.js": "/webstudio-version-2/static/js/926.e50df988.chunk.js",
+    "static/js/505.402ef940.chunk.js": "/webstudio-version-2/static/js/505.402ef940.chunk.js",
     "static/media/hero-bg-desk-2x.jpg": "/webstudio-version-2/static/media/hero-bg-desk-2x.a94c8b1fd9c2ca8328a2.jpg",
     "static/media/hero-bg-tab-2x.jpg": "/webstudio-version-2/static/media/hero-bg-tab-2x.60913ab49f5b1fdf4d25.jpg",
     "static/media/Img-bg.jpg": "/webstudio-version-2/static/media/Img-bg.893dc04f909adfec6bd2.jpg",
@@ -22,10 +27,15 @@
     "index.html": "/webstudio-version-2/index.html",
     "static/media/Vector.svg": "/webstudio-version-2/static/media/Vector.97e07e093f8e12dc18db.svg",
     "main.b5625ce4.css.map": "/webstudio-version-2/static/css/main.b5625ce4.css.map",
-    "main.5196673c.js.map": "/webstudio-version-2/static/js/main.5196673c.js.map"
+    "main.fe1fb0e8.js.map": "/webstudio-version-2/static/js/main.fe1fb0e8.js.map",
+    "775.8bbb36fc.chunk.js.map": "/webstudio-version-2/static/js/775.8bbb36fc.chunk.js.map",
+    "540.1ca3b03c.chunk.js.map": "/webstudio-version-2/static/js/540.1ca3b03c.chunk.js.map",
+    "608.511e95a6.chunk.js.map": "/webstudio-version-2/static/js/608.511e95a6.chunk.js.map",
+    "926.e50df988.chunk.js.map": "/webstudio-version-2/static/js/926.e50df988.chunk.js.map",
+    "505.402ef940.chunk.js.map": "/webstudio-version-2/static/js/505.402ef940.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b5625ce4.css",
-    "static/js/main.5196673c.js"
+    "static/js/main.fe1fb0e8.js"
   ]
 }
