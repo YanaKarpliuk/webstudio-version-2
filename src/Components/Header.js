@@ -17,6 +17,7 @@ export default function Header() {
   function closeMenu() {
     setIsOpen(false);
   }
+
   return (
     <header className="header">
       <div className="container header-flex">

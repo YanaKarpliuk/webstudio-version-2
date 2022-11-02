@@ -5,6 +5,10 @@
   @media screen and (min-width: 1200px) {
     width: 1170px;
   }
+
+  &__image {
+    min-width: 300px;
+  }
 }
 
 .portfolioDetails-img {
@@ -15,11 +19,16 @@
 }
 
 .portfolioDetails-text {
+  line-height: 1.5;
   @media screen and (min-width: 768px) {
     margin-left: 20px;
   }
   @media screen and (min-width: 1200px) {
     margin-left: 30px;
+  }
+
+  p:not(:last-child) {
+    margin-bottom: 15px;
   }
 }
 

@@ -10,6 +10,93 @@ import portfolio9 from '../images/portfolio-9.jpg';
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
 
+export default function Portfolio() {
+  const [list, setList] = useState(portfolio);
+
+  const filter = typeName => {
+    return setList(
+      portfolio.filter(item => {
+        return typeName ? item.type === typeName : list;
+      })
+    );
+  };
+
+  const all = () => setList(portfolio)
+
+  return (
+    <section className="portfolio">
+      <div className="container">
+        <ul className="portfolio-btn-list">
+          <li>
+            <button
+              type="button"
+              className="portfolio-btn"
+              onClick={() => all()}
+            >
+              All
+            </button>
+          </li>
+          <li>
+            <button
+              type="button"
+              className="portfolio-btn"
+              onClick={() => filter('Website')}
+            >
+              Websites
+            </button>
+          </li>
+          <li>
+            <button
+              type="button"
+              className="portfolio-btn"
+              onClick={() => filter('App')}
+            >
+              Apps
+            </button>
+          </li>
+          <li>
+            <button
+              type="button"
+              className="portfolio-btn btn-design"
+              onClick={() => filter('Design')}
+            >
+              Design
+            </button>
+          </li>
+          <li>
+            <button
+              type="button"
+              className="portfolio-btn btn-marketing"
+              onClick={() => filter('Marketing')}
+            >
+              Marketing
+            </button>
+          </li>
+        </ul>
+        <ul className="portfolio-img-list">
+          {list.map(item => (
+            <PortfolioItem key={item.id} {...item} />
+          ))}
+        </ul>
+      </div>
+    </section>
+  );
+}
+
+export function PortfolioItem(item) {
+  return (
+    <li className="portfolio-img-item">
+      <Link to={`/portfolio/${item.id}`} className="portfolio-link">
+        <img src={item.image} alt={item.alt} />
+        <div className="portfolio-img-info">
+          <h3 className="portfolio-title">{item.name}</h3>
+          <p className="portfolio-type">{item.type}</p>
+        </div>
+      </Link>
+    </li>
+  );
+}
+
 export const portfolio = [
   {
     id: 1,
@@ -75,114 +162,3 @@ export const portfolio = [
     type: 'App',
   },
 ];
-
-export const getPortfolioById = portfolioId => {
-  return portfolio.find(item => item.id === portfolioId);
-};
-
-export default function Portfolio() {
-  let typeName = '';
-
-  const [list, setList] = useState(portfolio);
-
-  const portfolioList = () =>
-    list.map(item => {
-      return (
-        <li key={item.id} className="portfolio-img-item">
-          <Link to={`${item.id}`} className="portfolio-link">
-            <img src={item.image} alt={item.alt} />
-            <div className="portfolio-img-info">
-              <h3 className="portfolio-title">{item.name}</h3>
-              <p className="portfolio-type">{item.type}</p>
-            </div>
-          </Link>
-        </li>
-      );
-    });
-
-  return (
-    <section className="portfolio">
-      <div className="container">
-        <ul className="portfolio-btn-list">
-          <li>
-            <button
-              type="button"
-              className="portfolio-btn"
-              onClick={() => {
-                typeName = 'Website';
-                return setList(portfolio);
-              }}
-            >
-              All
-            </button>
-          </li>
-          <li>
-            <button
-              type="button"
-              className="portfolio-btn"
-              onClick={() => {
-                typeName = 'Website';
-                return setList(
-                  portfolio.filter(item => {
-                    return typeName ? item.type === typeName : list;
-                  })
-                );
-              }}
-            >
-              Websites
-            </button>
-          </li>
-          <li>
-            <button
-              type="button"
-              className="portfolio-btn"
-              onClick={() => {
-                typeName = 'App';
-                return setList(
-                  portfolio.filter(item => {
-                    return typeName ? item.type === typeName : list;
-                  })
-                );
-              }}
-            >
-              Apps
-            </button>
-          </li>
-          <li>
-            <button
-              type="button"
-              className="portfolio-btn btn-design"
-              onClick={() => {
-                typeName = 'Design';
-                return setList(
-                  portfolio.filter(item => {
-                    return typeName ? item.type === typeName : list;
-                  })
-                );
-              }}
-            >
-              Design
-            </button>
-          </li>
-          <li>
-            <button
-              type="button"
-              className="portfolio-btn btn-marketing"
-              onClick={() => {
-                typeName = 'Marketing';
-                return setList(
-                  portfolio.filter(item => {
-                    return typeName ? item.type === typeName : list;
-                  })
-                );
-              }}
-            >
-              Marketing
-            </button>
-          </li>
-        </ul>
-        <ul className="portfolio-img-list">{portfolioList()}</ul>
-      </div>
-    </section>
-  );
-}
