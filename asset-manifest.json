@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/webstudio-version-2/static/css/main.b5625ce4.css",
-    "main.js": "/webstudio-version-2/static/js/main.fe1fb0e8.js",
+    "main.js": "/webstudio-version-2/static/js/main.959c6d11.js",
     "static/js/775.8bbb36fc.chunk.js": "/webstudio-version-2/static/js/775.8bbb36fc.chunk.js",
     "static/js/540.1ca3b03c.chunk.js": "/webstudio-version-2/static/js/540.1ca3b03c.chunk.js",
     "static/js/608.511e95a6.chunk.js": "/webstudio-version-2/static/js/608.511e95a6.chunk.js",
@@ -27,7 +27,7 @@
     "index.html": "/webstudio-version-2/index.html",
     "static/media/Vector.svg": "/webstudio-version-2/static/media/Vector.97e07e093f8e12dc18db.svg",
     "main.b5625ce4.css.map": "/webstudio-version-2/static/css/main.b5625ce4.css.map",
-    "main.fe1fb0e8.js.map": "/webstudio-version-2/static/js/main.fe1fb0e8.js.map",
+    "main.959c6d11.js.map": "/webstudio-version-2/static/js/main.959c6d11.js.map",
     "775.8bbb36fc.chunk.js.map": "/webstudio-version-2/static/js/775.8bbb36fc.chunk.js.map",
     "540.1ca3b03c.chunk.js.map": "/webstudio-version-2/static/js/540.1ca3b03c.chunk.js.map",
     "608.511e95a6.chunk.js.map": "/webstudio-version-2/static/js/608.511e95a6.chunk.js.map",
@@ -36,6 +36,6 @@
   },
   "entrypoints": [
     "static/css/main.b5625ce4.css",
-    "static/js/main.fe1fb0e8.js"
+    "static/js/main.959c6d11.js"
   ]
 }
