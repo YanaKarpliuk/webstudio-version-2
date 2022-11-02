@@ -1,0 +1,154 @@
+.mob-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: var(--bg-grayish);
+  height: 100vh;
+  width: 80vw;
+  padding-top: 21px;
+  padding-bottom: 21px;
+  z-index: 5;
+  @media screen and (min-width: 768px) {
+    display: none;
+    pointer-events: none;
+  }
+}
+
+.mob-menu-enter {
+  right: -100vw;
+}
+.mob-menu-enter-active {
+  right: 0;
+  transition: right 250ms;
+}
+.mob-menu-exit {
+  right: 0;
+}
+.mob-menu-exit-active {
+  right: -100vw;
+  transition: right 250ms;
+}
+
+.menu-open-button,
+.menu-close-button {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  width: 24px;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.menu-open-button {
+  color: var(--black-color);
+  cursor: pointer;
+  transition-property: fill;
+  @include transitioned;
+  &:hover,
+  &:focus {
+    fill: var(--blue-color);
+  }
+}
+
+// .hidden {
+//   opacity: 0;
+//   pointer-events: none;
+// }
+
+.no-scroll {
+  overflow: hidden;
+  @media screen and (min-width: 768px) {
+    overflow: visible;
+  }
+}
+
+.menu-close-button {
+  position: absolute;
+  right: 0;
+  // padding-right: 25px;
+  color: var(--black-color);
+  cursor: pointer;
+  transition-property: fill;
+  @include transitioned;
+  &:hover,
+  &:focus {
+    fill: var(--blue-color);
+  }
+}
+
+.mob-menu__list {
+  list-style: none;
+  padding-top: 48px;
+}
+
+.mob-menu__item {
+  margin-bottom: 35px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.mob-menu__link {
+  @include font(500, 40px, 47px, 0.02em);
+  text-decoration: none;
+  color: var(--black-color);
+  transition-property: color, fill;
+  @include transitioned;
+  &:hover,
+  &:focus {
+    color: var(--blue-color);
+  }
+}
+
+.mob-menu__link--active {
+  color: var(--blue-color);
+}
+
+.mob-menu-contact-list {
+  display: inline-flex;
+  flex-direction: column;
+  margin-bottom: 64px;
+  list-style: none;
+}
+
+.mob-menu-contact {
+  text-decoration: none;
+}
+
+.mob-menu-tel {
+  @include font(500, 34px, 40px, 0.02em);
+  color: var(--blue-color);
+  margin-bottom: 32px;
+}
+
+.mob-menu-mail {
+  @include font(500, 24px, 28px, 0.02em);
+  color: var(--gray-color);
+}
+
+.mob-sm-list {
+  display: flex;
+  list-style: none;
+}
+
+.mob-sm-list__item {
+  padding-left: 10px;
+  padding-right: 10px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+  &:first-child {
+    padding-left: 0;
+  }
+  &:last-child {
+    padding-right: 0;
+    border-right: none;
+  }
+}
+
+.mob-sm-list__link {
+  text-decoration: none;
+  @include font(500, 18px, 22px, 0.02em);
+  color: var(--blue-color);
+}

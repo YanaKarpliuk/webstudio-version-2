@@ -1,0 +1,20 @@
+@import './base/common';
+@import './base/reset';
+@import "./utils/vars";
+@import "./utils/mixins";
+///////////////////////////
+@import "./components/container";
+@import "./components/btn";
+@import "./components/modal";
+@import "./components/title";
+//////////////////////////
+@import "./layout/header";
+@import "./layout/about";
+@import "./layout/companies";
+@import "./layout/footer";
+@import "./layout/hero";
+@import "./layout/portfolio";
+@import "./layout/team";
+@import './layout/portfolioDetails';
+@import './layout/contacts';
+@import './layout/mobileMenu';

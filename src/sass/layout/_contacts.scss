@@ -1,0 +1,24 @@
+.contact-form {
+  padding-bottom: 60px;
+  padding-top: 60px;
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 94px;
+    padding-top: 94px;
+    margin: 0 auto;
+  }
+}
+
+.contact-form-content {
+  @media screen and (min-width: 1200px) {
+    margin: 0 auto;
+    width: 862px;
+  }
+}
+
+.contact-heading {
+  margin-bottom: 20px;
+}
+
+.contact-text {
+  margin-bottom: 15px;
+}

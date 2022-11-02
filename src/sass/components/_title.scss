@@ -1,0 +1,9 @@
+.main-title {
+  @include font (700, 28px, 33px, 0.03em);
+  text-align: center;
+  margin-bottom: 30px;
+  @media screen and (min-width: 1200px) {
+    @include font (700, 36px, 42px, 0.03em);
+    margin-bottom: 50px;
+  }
+}
